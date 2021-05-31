@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="task" label="Needit" max_length="40" name="x_58872_needit_needit" sizeclass="0" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Requested type" mandatory="true" max_length="40" name="u_choice_1" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Human Resouces" sequence="0" value="hr"/>
+                <element inactive_on_update="false" label="Facilities" sequence="1" value="facilities"/>
+                <element inactive_on_update="false" label="Legal" sequence="2" value="legal"/>
+                <element inactive_on_update="false" label="Your Department choice" sequence="3" value="your_choice"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="legal1" label="What Needed" mandatory="true" max_length="40" name="u_choice_3" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Human Resouces1" sequence="0" value="hr1"/>
+                <element inactive_on_update="false" label="Human Resouces 2" sequence="1" value="hr 2"/>
+                <element inactive_on_update="false" label="Facilities1" sequence="2" value="facilities1"/>
+                <element inactive_on_update="false" label="Facilities2" sequence="3" value="facilities2"/>
+                <element inactive_on_update="false" label="Legal1" sequence="4" value="legal1"/>
+                <element inactive_on_update="false" label="Legal2" sequence="5" value="legal2"/>
+                <element inactive_on_update="false" label="Your Department choice1" sequence="6" value="your_choice1"/>
+                <element inactive_on_update="false" label="Your Department choice2" sequence="7" value="your_choice2"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="13" label="State" max_length="40" name="u_choice_5" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Requested" sequence="0" value="13"/>
+                <element inactive_on_update="false" label="Awaiting Approval" sequence="1" value="14"/>
+                <element inactive_on_update="false" label="Approved" sequence="2" value="15"/>
+                <element inactive_on_update="false" label="Awaiting Feedback" sequence="3" value="16"/>
+                <element inactive_on_update="false" label="Withdrawn" sequence="4" value="8"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="When needed" mandatory="true" max_length="40" name="u_glide_date_time_6" type="glide_date_time"/>
+        <element attributes="encode_utf8=false" label="Requested for" mandatory="true" max_length="32" name="u_reference_2" reference="sys_user" type="reference"/>
+    </element>
+</database>
